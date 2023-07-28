@@ -7,5 +7,5 @@ app.listen(3000, ()=> {
     console.log('server')
 });
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/home.htlm'));
+    res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
