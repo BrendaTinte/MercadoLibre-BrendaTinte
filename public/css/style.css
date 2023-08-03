@@ -84,4 +84,108 @@ header {
   details:not([open]) > summary:before {
     content: '+';
   }
-  
+  /*registro*/
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #041b34;
+}
+
+.forn {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #e5da44;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.categories-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.boton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton[type="reset"] {
+    background-color: #007bff;
+    margin-left: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+/*login*/
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ffff4a;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .login-form label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0 0 3px #c5da4e;
+  }
+  .login-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
