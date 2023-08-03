@@ -9,6 +9,8 @@ app.listen(3000, ()=> {
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
-app.get('/', (req, res) => {
+app.get('/ofertas', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/ofertas.html'));
 });
+app.use(express.static(publicPath));
+//modi
