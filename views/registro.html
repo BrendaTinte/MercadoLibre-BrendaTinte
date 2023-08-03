@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img class="logo" src="/img/logo-mercado-liebre.svg"  alt="Logo">
+          </a>
+        <form>
+            <input type="text" placeholder="Buscar">
+            <button>Buscar</button>
+        </form>
+        <nav>
+            <ul>
+                <li></li><a href="/ofertas">Ofertas</a></li>
+                <li></li><a href="/">Tiendas Oficiales</a> </li> 
+                <li></li><a href="/">Vender</a> </li>
+                <li></li><a href="/">Ayuda</a> </li>
+                <li></li><a href="/registro">Creá tu cuenta</a> </li>
+                <li></li><a href="/login">Ingresá</a> </li>
+                <li></li><a href="/">Mis compras</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Registro de Usuario</h1>
+    <form class="forn" action="/submit" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="nombre_usuario">Nombre de usuario:</label>
+        <input type="text" id="nombre_usuario" name="nombre_usuario" required><br>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio" required><br>
+
+        <label>Perfil del usuario:</label>
+        <input type="radio" id="comprar" name="perfil_usuario" value="comprar" required>
+        <label for="comprar">Comprar</label>
+        <input type="radio" id="vender" name="perfil_usuario" value="vender" required>
+        <label for="vender">Vender</label><br>
+
+        <label>Categorías de interés:</label><br>
+        <input type="checkbox" id="electro" name="categorias_interes" value="Electro">
+        <label for="electro">Electro</label><br>
+        <input type="checkbox" id="moda" name="categorias_interes" value="Moda">
+        <label for="moda">Moda</label><br>
+        <input type="checkbox" id="hogar" name="categorias_interes" value="Hogar">
+        <label for="hogar">Hogar</label><br>
+        <input type="checkbox" id="jugueteria" name="categorias_interes" value="Juguetería">
+        <label for="jugueteria">Juguetería</label><br>
+        <input type="checkbox" id="vida_sana" name="categorias_interes" value="Vida sana">
+        <label for="vida_sana">Vida sana</label><br>
+
+        <label for="foto_usuario">Foto de usuario:</label>
+        <input type="file" id="foto_usuario" name="foto_usuario" accept="image/*" required><br>
+
+        <label for="contrasenia">Contraseña:</label>
+        <input type="password" id="contrasenia" name="contrasenia" required><br>
+
+        <label for="confirmar_contrasenia">Confirmar contraseña:</label>
+        <input type="password" id="confirmar_contrasenia" name="confirmar_contrasenia" required><br>
+
+        <button class="boton" type="submit">Enviar</button>
+        <button class="boton" type="reset">Borrar</button>
+    </form>
+</body>
+</html>
