@@ -12,5 +12,8 @@ app.get('/', (req, res) => {
 app.get('/ofertas', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/ofertas.html'));
 });
+app.get('/registro', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/registro.html'));
+});
 app.use(express.static(publicPath));
 //modi

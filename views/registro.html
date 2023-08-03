@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo">
+        <form>
+            <input type="text" placeholder="Buscar">
+            <button>Buscar</button>
+        </form>
+        <nav>
+            <ul>
+                <li></li><a href="/ofertas">Ofertas</a></li>
+                <li></li><a href="/tiendas-oficiales">Tiendas Oficiales</a> </li> 
+                <li></li><a href="/vender">Vender</a> </li>
+                <li></li><a href="/ayuda">Ayuda</a> </li>
+                <li></li><a href="/crear-cuenta">Creá tu cuenta</a> </li>
+                <li></li><a href="/ingresar">Ingresá</a> </li>
+                <li></li><a href="/mis-compras">Mis compras</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <form action="/register" method="POST">
+        <label for="nombre">Nombre y apellido:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+      
+        <label for="usuario">Nombre de usuari@:</label>
+        <input type="text" id="usuario" name="usuario"><br>
+      
+        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento"><br>
+      
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio"><br>
+      
+        <p>Perfil del usuario:</p>
+        <input type="radio" id="comprar" name="perfil" value="comprar">
+        <label for="comprar">Comprar</label><br>
+        <input type="radio" id="vender" name="perfil" value="vender">
+        <label for="vender">Vender</label><br>
+      
+        <p>Categorías de interés:</p>
+        <input type="checkbox" id="electro" name="categorias[]" value="electro">
+        <label for="electro">Electro</label><br>
+        <input type="checkbox" id="moda" name="categorias[]" value="moda">
+        <label for="moda">Moda</label><br>
+        <input type="checkbox" id="hogar" name="categorias[]" value="moda">
+</body>
+</html>
